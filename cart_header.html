@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Header</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Header styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .header .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .header .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center; /* Align icons vertically */
+        }
+
+        .header .nav-links a i {
+            margin-right: 5px; /* Space between icon and text */
+        }
+
+        .header .cart-info {
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header .cart-info i {
+            margin-right: 8px;
+        }
+
+        .header .nav-links a:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="cart-info">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Total item(s) in the Cart: <strong>1</strong></span>
+        </div>
+        <div class="nav-links">
+            <a href="#view-cart"><i class="fas fa-eye"></i> View Cart</a>
+            <a href="#checkout"><i class="fas fa-credit-card"></i> Checkout</a>
+            <a href="#remove-cart"><i class="fas fa-trash-alt"></i> Remove Cart</a>
+        </div>
+
+    </header>
+</body>
+</html>

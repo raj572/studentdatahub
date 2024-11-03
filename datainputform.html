@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Input Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #a1c1d3;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group label {
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        .form-group input,
+        .form-group select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .form-group input[type="file"] {
+            padding: 3px;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        .form-group .icon {
+            position: relative;
+        }
+        .form-group .icon i {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #888;
+        }
+        .form-group input.icon-input {
+            padding-left: 35px;
+        }
+        .submit-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 1rem;
+        }
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group icon">
+                <label for="course"><i class="fas fa-book"></i> Course</label>
+                <input type="text" id="course" name="course" placeholder="Enter course name" class="icon-input" required>
+            </div>
+
+            <div class="form-group icon">
+                <label for="fields"><i class="fas fa-align-left"></i> Fields</label>
+                <input type="text" id="fields" name="fields" placeholder="Enter fields" class="icon-input" required>
+            </div>
+
+            <div class="form-group icon">
+                <label for="upload"><i class="fas fa-upload"></i> Upload Samples</label>
+                <input type="file" id="upload" name="upload" required>
+            </div>
+
+            <div class="form-group icon">
+                <label for="price"><i class="fa-solid fa-indian-rupee-sign"></i></i> Price</label>
+                <input type="number" id="price" name="price" placeholder="Enter price" class="icon-input" required>
+            </div>
+
+            <button type="submit" class="submit-button"><i class="fas fa-paper-plane"></i> Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer</title>
+    <style>
+        /* Footer styling */
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .footer {
+            background-color: #000000;
+            color: #f1f1f1;
+            padding: 40px 20px;
+            font-size: 15px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer-content {
+            max-width: 900px;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            text-align: left;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+        }
+
+        .footer h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #ffba08;
+        }
+
+        .footer p {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+
+        .footer .footer-links {
+            margin: 15px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .footer .footer-links a {
+            color: #ffba08;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .footer .footer-links a:hover {
+            color: #ffdd57;
+        }
+
+        .footer .footer-contact {
+            font-size: 14px;
+            color: #cfcfcf;
+            margin-top: 10px;
+        }
+
+        .footer .footer-contact span {
+            display: block;
+            font-style: italic;
+            font-size: 13px;
+            margin-top: 4px;
+        }
+
+        .footer a {
+            color: #ffdd57;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #fff;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Address Section -->
+            <div class="footer-section">
+                <h3>STUDENT DATABASE</h3>
+                <p>
+                    #1278, Level I, 25th Main Road,<br>
+                    40th Cross Road, 9th Block, Jayanagar<br>
+                    Bengaluru - 560 069
+                </p>
+            </div>
+            <!-- Links and Contact Section -->
+            <div class="footer-section">
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#terms">Terms</a>
+                    <a href="#disclaimer">Disclaimer</a>
+                </div>
+                <p class="footer-contact">
+                    <strong>Contact:</strong> (+91) 72592 13216<br>
+                    <span>WhatsApp Calls Only</span>
+                </p>
+                <p>Email: <a href="mailto:data@studentsdatabase.in">data@studentsdatabase.in</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

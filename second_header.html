@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #eaeff1;
+            margin: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff;
+            color: white;
+            padding: 15px 20px;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .logo img{
+            width: 100px;
+            height: auto;
+            margin: 0;
+
+        }
+        .header .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .header .contact-info i {
+            margin-right: 5px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            .header {
+              display: flex;
+                padding: 10px; /* Adjust padding for smaller screens */
+            }
+            .header .contact-info {
+                margin-top: 10px; /* Add some space above the contact info */
+                gap: 10px; /* Reduce gap between contact items */
+                font-size: smaller;
+                display: flex;
+                flex-direction: column;
+            }
+            .header .contact-info .email,.number{
+                font-size: smaller;
+            }
+            .header .logo{
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">STUDENT DATABASE</div>
+        <div class="contact-info">
+            <span class="email"><i class="fas fa-envelope"></i> data@studentdatabase.in</span>
+            <span class="number"><i class="fas fa-phone-alt "></i>+91-7269213216</span>
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMAT Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #eaeff1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 10px; /* Add padding for small screens */
+        }
+        .card {
+            background-color: #bdbdc2;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 350px; /* Max width for larger screens */
+            padding: 20px;
+            text-align: center;
+            cursor:pointer;
+            position: relative;
+            box-sizing: border-box; /* Include padding in width calculations */
+        }
+        .card h2 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .card .icon {
+            font-size: 50px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .card .description {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .price {
+            font-size: 1.4rem;
+            color: #d64a27;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            background-color: #0871db;
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: calc(100% - 20px); /* Adjust button width for responsiveness */
+            text-align: center;
+            border: 2px solid transparent;
+        }
+        .button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            border: 2px solid #0056b3;
+        }
+        .button:active {
+            transform: translateY(0);
+        }
+        .button i {
+            margin-right: 8px;
+        }
+        .card a {
+            display: block;
+            margin-top: 10px;
+            color: #cad3dd;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .card .query {
+            color: #0056b3;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 400px) {
+            .card .icon {
+                font-size: 40px; /* Reduce icon size */
+            }
+            .card h2 {
+                font-size: 1.5rem; /* Adjust heading size */
+            }
+            .description {
+                font-size: 0.85rem; /* Adjust description size */
+            }
+            .price {
+                font-size: 1.2rem; /* Adjust price size */
+            }
+            .button {
+                font-size: 0.9rem; /* Adjust button font size */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="icon">
+            <i class="fas fa-file-alt"></i>
+        </div>
+        <h2>KMAT (MBA) 2024</h2>
+        <p class="description">Comprehensive data for candidates applying for KMAT (MBA) 2024, with 4,137 records.</p>
+        <p class="price">₹ 2,500.00</p>
+        <a href="#" class="button"><i class="fas fa-download"></i> Download Samples</a>
+        <a href="#" class="button"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+        <a href="#" class="query">Have a query about this data? Click here</a>
+    </div>
+
+</body>
+</html>
